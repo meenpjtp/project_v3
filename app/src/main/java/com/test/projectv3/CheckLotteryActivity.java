@@ -22,7 +22,7 @@ public class CheckLotteryActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle toggle;
 
-    //Initial
+    //ListView
     private ListView listView;
 
     @Override
@@ -43,16 +43,37 @@ public class CheckLotteryActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
                     case(R.id.nav_checkLotto):
-                        Intent n1 = new Intent(getApplicationContext(),CheckLotteryActivity.class);
+                        Intent n1 = new Intent(getApplicationContext(), CheckLotteryActivity.class);
                         startActivity(n1);
                         break;
+
+                    case(R.id.nav_mode1):
+                        Intent n2 = new Intent(getApplicationContext(), ModeSimulatePurchaseActivity.class);
+                        startActivity(n2);
+                        break;
+
+                    case(R.id.nav_mode2):
+                        Intent n3 = new Intent(getApplicationContext(), ModePurchase.class);
+                        startActivity(n3);
+                        break;
+
+                    case(R.id.nav_static1):
+                        Intent n4 = new Intent(getApplicationContext(), StaticSimulatePurchase.class);
+                        startActivity(n4);
+                        break;
+
+                    case(R.id.nav_static2):
+                        Intent n5 = new Intent(getApplicationContext(), StaticPurchase.class);
+                        startActivity(n5);
+                        break;
+
                 }
                 return true;
             }
         });
 
 
-        //Initial
+        //ListView
         listView = (ListView) findViewById(R.id.listView);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(CheckLotteryActivity.this,
                 android.R.layout.simple_list_item_1,

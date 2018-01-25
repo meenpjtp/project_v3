@@ -18,7 +18,11 @@
         </activity>
         <activity android:name=".Lotteries.LotteryDecember_1_2560" />
         <activity android:name=".Lotteries.LotteryDecember_16_2560" />
-        <activity android:name=".Lotteries.LotteryDecember_30_2560"></activity>
+        <activity android:name=".Lotteries.LotteryDecember_30_2560" />
+        <activity android:name=".ModeSimulatePurchaseActivity" />
+        <activity android:name=".ModePurchase" />
+        <activity android:name=".StaticSimulatePurchase" />
+        <activity android:name=".StaticPurchase"></activity>
     </application>
 
 </manifest>
