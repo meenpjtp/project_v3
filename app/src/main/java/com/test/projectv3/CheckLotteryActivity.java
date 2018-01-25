@@ -22,6 +22,7 @@ public class CheckLotteryActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle toggle;
 
+
     //ListView
     private ListView listView;
 
