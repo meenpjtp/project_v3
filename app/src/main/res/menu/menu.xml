@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:id="@+id/nav_checkLotto"
+            android:title="@string/mode_checklotto" />
+        <item
+            android:id="@+id/nav_mode1"
+            android:title="@string/mode_1" />
+        <item
+            android:id="@+id/nav_mode2"
+            android:title="@string/mode_2" />
+        <item
+            android:id="@+id/nav_static1"
+            android:title="@string/mode_static1" />
+        <item
+            android:id="@+id/nav_static2"
+            android:title="@string/mode_static2" />
+        <item
+            android:id="@+id/nav_calc"
+            android:title="@string/mode_calc" />
+
+
+    </group>
+
+</menu>

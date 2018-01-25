@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Lotteries.LotteryDecember_1_2560" />
+        <activity android:name=".Lotteries.LotteryDecember_16_2560" />
+        <activity android:name=".Lotteries.LotteryDecember_30_2560"></activity>
     </application>
 
 </manifest>
