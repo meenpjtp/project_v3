@@ -16,6 +16,7 @@ import com.test.projectv3.Lotteries.LotteryDecember_16_2560;
 import com.test.projectv3.Lotteries.LotteryDecember_1_2560;
 import com.test.projectv3.Lotteries.LotteryDecember_30_2560;
 
+
 public class CheckLotteryActivity extends AppCompatActivity {
 
     //Navigator
