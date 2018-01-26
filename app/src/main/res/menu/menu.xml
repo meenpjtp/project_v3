@@ -21,7 +21,6 @@
             android:id="@+id/nav_calc"
             android:title="@string/mode_calc" />
 
-
     </group>
 
 </menu>
