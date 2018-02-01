@@ -14,7 +14,7 @@ import java.util.List;
 public class DBHelperDecember_30_2560 extends SQLiteOpenHelper{
 
     public static final String DBNAME = "30_12_60.sqlite";
-    public static final String DBLOCATION = "/data/data/com.test.projectv3/database/";
+    public static final String DBLOCATION = "/data/data/com.test.projectv3/databases/";
     private Context mContext;
     private SQLiteDatabase mDatabase;
 
@@ -52,7 +52,7 @@ public class DBHelperDecember_30_2560 extends SQLiteOpenHelper{
         List<LotteryModel> lotteryModelList = new ArrayList<>();
         openDatabase();
 
-        Cursor cursor = mDatabase.rawQuery("Select * From Lottery", null);
+        Cursor cursor = mDatabase.rawQuery("SELECT * FROM LOTTERY", null);
         cursor.moveToFirst();
         while (!cursor.isAfterLast()){
             lotteryModel = new LotteryModel(cursor.getInt(0), cursor.getString(1), cursor.getString(2));

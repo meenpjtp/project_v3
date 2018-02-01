@@ -1,4 +1,4 @@
-package com.test.projectv3.Lotteries;
+package com.test.projectv3.LotteryActivities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
