@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CheckLotteryActivity">
+        <activity android:name=".LotteriesActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,7 +22,8 @@
         <activity android:name=".ModeSimulatePurchaseActivity" />
         <activity android:name=".ModePurchase" />
         <activity android:name=".StaticSimulatePurchase" />
-        <activity android:name=".StaticPurchase"></activity>
+        <activity android:name=".StaticPurchase" />
+        <activity android:name=".CheckLotteryActivity"></activity>
     </application>
 
 </manifest>
