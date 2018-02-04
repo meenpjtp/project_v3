@@ -9,10 +9,14 @@
 
     <Spinner
         android:id="@+id/spSelect"
-        android:layout_width="368dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="107dp" />
+        tools:layout_editor_absoluteY="107dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"/>
 
     <EditText
         android:id="@+id/etInputLottery"
@@ -20,11 +24,17 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:digits="1234567890"
-        android:hint="กรอกเลขที่เลือก" />
+        android:hint="กรอกเลขที่เลือก"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ตรวจ" />
+        android:text="ตรวจ"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"/>
 </LinearLayout>

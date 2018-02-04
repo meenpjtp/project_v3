@@ -6,6 +6,7 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -104,8 +105,12 @@ public class LotteriesActivity extends AppCompatActivity {
         });
         listView.setAdapter(adapter);
 
+    }
 
-
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.check,menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
     //Toggle
@@ -113,7 +118,29 @@ public class LotteriesActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         if(toggle.onOptionsItemSelected(item)){
             return true;
+        } switch (item.getItemId()){
+            case R.id.nav_checkLotto:
+                Intent b = new Intent(this,CheckLotteryActivity.class);
+                startActivity(b);
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
+
+    //Menu
+    /*@Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.check,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.nav_checkLotto:
+                Intent b = new Intent(this,CheckLotteryActivity.class);
+                startActivity(b);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }*/
 }
