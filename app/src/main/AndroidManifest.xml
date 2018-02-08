@@ -23,7 +23,8 @@
         <activity android:name=".ModePurchase" />
         <activity android:name=".StaticSimulatePurchase" />
         <activity android:name=".StaticPurchase" />
-        <activity android:name=".CheckLotteryActivity"></activity>
+        <activity android:name=".CheckLotteryActivity" />
+        <activity android:name=".LotteryActivity"></activity>
     </application>
 
 </manifest>
